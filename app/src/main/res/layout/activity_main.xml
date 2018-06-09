@@ -4,29 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="bold"
+    android:background="@color/colorPrimary"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.londonappbrewery.iampoor.MainActivity"
-    android:background="@color/colorPrimary">
+    tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:srcCompat="@drawable/coal"
-        />
+        app:srcCompat="@drawable/coal" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/i_am_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="@string/app_name"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="91dp"
+        android:text="@string/i_am"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp"
-        android:textColor="#373738"/>
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/poor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/i_am_tv"
+        android:layout_toEndOf="@+id/i_am_tv"
+        android:layout_marginTop="91dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/poor"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
